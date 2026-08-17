@@ -44,7 +44,7 @@ Multiple overlapping images are captured along the linear axis and stitched into
 |  |  |
 |:---:|:---:|
 | <img src="images/single_capture.png" width="500"> | <img src="images/stitched_image.png" width="500"> |
-| <small>Figure 3a. Single capture.</small> | <small>Figure 3b. Stitched image.</small> |
+| <em>Figure 3a. Single capture.</em> | <em>Figure 3b. Stitched image.</em> |
 
 ### Component Detection
 
@@ -63,22 +63,18 @@ Detected component classes include:
 The YOLO model was trained to detect nine electronic component classes on the PCBA.
 
 <p align="center">
-  <img src="images/yolo_graphs_result.png" width="800">
+  <img src="images/yolo_graphs_result.png" width="600">
   <br>
   <em>Figure 5. YOLO11n Model Training Diagram Results.</em>
 </p>
 
 <p align="center">
-  <img src="images/yolo_f1_score.png" width="800">
+  <img src="images/yolo_f1_score.png" width="600">
   <br>
   <em>Figure 6. YOLO11n Model F1 Score Diagram.</em>
 </p>
 
 ## Control Software
-
-<p align="center">
-  <img src="images/gui.png" width="850">
-</p>
 
 The PyQt5 application provides:
 
