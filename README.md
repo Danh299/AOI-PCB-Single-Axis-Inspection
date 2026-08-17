@@ -3,7 +3,7 @@
 A PLC-controlled **Automated Optical Inspection (AOI)** system for detecting missing electronic components on PCBA using **single-axis motion control, OpenCV image stitching, YOLO, Modbus RTU, and Python/PyQt5**.
 
 <p align="center">
-  <img src="images/system_overview.png" width="800">
+  <img src="images/system_overview.png" width="600">
 </p>
 
 ## Overview
@@ -31,39 +31,31 @@ The Python/PyQt5 application handles machine control, camera monitoring, PLC com
 
 <p align="center">
   <img src="images/electrical_diagram.png" width="800">
+  <br>
+  <em>Figure 1. Overall AOI PCBA Single Axis Inspection System.</em>
 </p>
 
 ## Computer Vision
 
 ### Image Stitching
 
-Multiple overlapping images are captured along the linear axis and stitched into a larger PCB image.
+Multiple overlapping images are captured along the linear axis and stitched into a larger PCB image, which will resolve problem of oblique viewing angles and component occlusion on PCB as shown on Figure 2 and Figure 3.
 
-| Single Capture                                    | Stitched Image                                    |
+| Figure 2. Single Capture                          | Figure 3. Stitched Image                          |
 | ------------------------------------------------- | ------------------------------------------------- |
-| <img src="images/single_capture.png" width="400"> | <img src="images/stitched_image.png" width="400"> |
+| <img src="images/single_capture.png" width="300"> | <img src="images/stitched_image.png" width="300"> |
 
 ### Component Detection
 
 <p align="center">
-  <img src="images/detection_result.png" width="800">
+  <img src="images/detection_result.png" width="600">
+  <br>
+  <em>Figure 4. Overall AOI PCBA Single Axis Inspection System.</em>
 </p>
 
 Detected component classes include:
 
 `LED` · `Diode` · `7-Segment` · `Button` · `Header` · `IC` · `SMD Resistor` · `SMD Capacitor` · `SMD LED`
-
-### Missing-Component Inspection
-
-```text
-Reference PCB      Inspected PCB
-LED: 8             LED: 7
-Diode: 8           Diode: 8
-IC: 1              IC: 1
-
-→ Missing LED: 1
-→ Result: NG
-```
 
 ## Control Software
 
@@ -82,6 +74,18 @@ The PyQt5 application provides:
 * Production counters
 * Datalog and Excel export
 
+<p align="center">
+  <img src="images/gui_main.png" width="600">
+  <br>
+  <em>Figure 5. Main GUI.</em>
+</p>
+
+<p align="center">
+  <img src="images/gui_sys.png" width="600">
+  <br>
+  <em>Figure 6. System GUI.</em>
+</p>
+
 ## Technologies
 
 **Computer Vision:** OpenCV, Ultralytics YOLO, Image Stitching, Object Detection
@@ -93,8 +97,7 @@ The PyQt5 application provides:
 
 ```text
 .
-├── src/          # Python application and GUI
-├── model/        # YOLO model
+├── src/          # Python application
 ├── plc/          # PLC program
 ├── images/       # Project images
 ├── docs/         # Project report
@@ -119,7 +122,7 @@ python src/main.py
 
 ## Project Report
 
-[View Full Project Report](docs/Báo Cáo DACDT.pdf)
+[View Full Project Report](docs/BaoCaoDACDT.pdf)
 
 ## Author
 
