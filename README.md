@@ -4,6 +4,14 @@ A PLC-controlled **Automated Optical Inspection (AOI)** system for detecting mis
 
 <p align="center">
   <img src="images/system_overview.png" width="600">
+  <br>
+  <em>Figure 1. Overall AOI PCBA Single Axis Inspection System.</em>
+</p>
+
+<p align="center">
+  <img src="images/cad_design.png" width="600">
+  <br>
+  <em>Figure 2. CAD Design of System.</em>
 </p>
 
 ## Overview
@@ -27,36 +35,16 @@ The Python/PyQt5 application handles machine control, camera monitoring, PLC com
 * PyQt5 control and monitoring GUI
 * Datalog and Excel export
 
-## Electrical Diagram
-
-<p align="center">
-  <img src="images/electrical_diagram.png" width="600">
-  <br>
-  <em>Figure 1. Overall AOI PCBA Single Axis Inspection System.</em>
-</p>
-
-<p align="center">
-  <img src="images/cad_design.png" width="600">
-  <br>
-  <em>Figure 2. CAD Design of System.</em>
-</p>
-
 ## Computer Vision
 
 ### Image Stitching
 
 Multiple overlapping images are captured along the linear axis and stitched into a larger PCB image, which will resolve problem of oblique viewing angles and component occlusion on PCB as shown on Figure 3a and 3b.
 
-<p align="center">
-  <img src="images/single_capture.png" width="48%">
-  <img src="images/stitched_image.png" width="48%">
-</p>
-
-<p align="center">
-  <em>Figure 3a. Single Capture. &nbsp;&nbsp;&nbsp;&nbsp; Figure 3b. Stitched Image.</em>
-</p>
-
-<br clear="both">
+|  |  |
+|:---:|:---:|
+| <img src="images/single_capture.png" width="500"> | <img src="images/stitched_image.png" width="500"> |
+| <small>Figure 3a. Single capture.</small> | <small>Figure 3b. Stitched image.</small> |
 
 ### Component Detection
 
