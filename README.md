@@ -140,6 +140,6 @@ python src/main.py
 ## Author
 
 **Nguyen Cong Danh**
-Mechatronics Engineering – HCMUTE
+ – Mechatronics Engineering – HCMUTE
 
-Computer Vision · Machine Vision · PC Control · Robotics
+Computer Vision · Machine Vision · PC Control · Automation
