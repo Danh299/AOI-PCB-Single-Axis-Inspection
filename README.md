@@ -3,7 +3,7 @@
 A PLC-controlled **Automated Optical Inspection (AOI)** system for detecting missing electronic components on PCBA using **single-axis motion control, OpenCV image stitching, YOLO, Modbus RTU, and Python/PyQt5**.
 
 <p align="center">
-  <img src="images/system_overview.jpg" width="800">
+  <img src="images/system_overview.png" width="800">
 </p>
 
 ## Overview
@@ -41,12 +41,12 @@ Multiple overlapping images are captured along the linear axis and stitched into
 
 | Single Capture                                    | Stitched Image                                    |
 | ------------------------------------------------- | ------------------------------------------------- |
-| <img src="images/single_capture.jpg" width="400"> | <img src="images/stitched_image.jpg" width="400"> |
+| <img src="images/single_capture.png" width="400"> | <img src="images/stitched_image.png" width="400"> |
 
 ### Component Detection
 
 <p align="center">
-  <img src="images/detection_result.jpg" width="800">
+  <img src="images/detection_result.png" width="800">
 </p>
 
 Detected component classes include:
@@ -68,7 +68,7 @@ IC: 1              IC: 1
 ## Control Software
 
 <p align="center">
-  <img src="images/gui.jpg" width="850">
+  <img src="images/gui.png" width="850">
 </p>
 
 The PyQt5 application provides:
