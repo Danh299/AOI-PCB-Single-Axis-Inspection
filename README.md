@@ -30,32 +30,61 @@ The Python/PyQt5 application handles machine control, camera monitoring, PLC com
 ## Electrical Diagram
 
 <p align="center">
-  <img src="images/electrical_diagram.png" width="800">
+  <img src="images/electrical_diagram.png" width="600">
   <br>
   <em>Figure 1. Overall AOI PCBA Single Axis Inspection System.</em>
+</p>
+
+<p align="center">
+  <img src="images/cad_design.png" width="600">
+  <br>
+  <em>Figure 2. CAD Design of System.</em>
 </p>
 
 ## Computer Vision
 
 ### Image Stitching
 
-Multiple overlapping images are captured along the linear axis and stitched into a larger PCB image, which will resolve problem of oblique viewing angles and component occlusion on PCB as shown on Figure 2 and Figure 3.
+Multiple overlapping images are captured along the linear axis and stitched into a larger PCB image, which will resolve problem of oblique viewing angles and component occlusion on PCB as shown on Figure 3a and 3b.
 
-| Figure 2. Single Capture                          | Figure 3. Stitched Image                          |
-| ------------------------------------------------- | ------------------------------------------------- |
-| <img src="images/single_capture.png" width="300"> | <img src="images/stitched_image.png" width="300"> |
+<p align="center">
+  <img src="images/single_capture.png" width="48%">
+  <img src="images/stitched_image.png" width="48%">
+</p>
+
+<p align="center">
+  <em>Figure 3a. Single Capture. &nbsp;&nbsp;&nbsp;&nbsp; Figure 3b. Stitched Image.</em>
+</p>
+
+<br clear="both">
 
 ### Component Detection
 
 <p align="center">
   <img src="images/detection_result.png" width="600">
   <br>
-  <em>Figure 4. Overall AOI PCBA Single Axis Inspection System.</em>
+  <em>Figure 4. Visual Inspection Result using YOLO11n Detection Model.</em>
 </p>
 
 Detected component classes include:
 
 `LED` · `Diode` · `7-Segment` · `Button` · `Header` · `IC` · `SMD Resistor` · `SMD Capacitor` · `SMD LED`
+
+## YOLO Training Results
+
+The YOLO model was trained to detect nine electronic component classes on the PCBA.
+
+<p align="center">
+  <img src="images/yolo_graphs_result.png" width="800">
+  <br>
+  <em>Figure 5. YOLO11n Model Training Diagram Results.</em>
+</p>
+
+<p align="center">
+  <img src="images/yolo_f1_score.png" width="800">
+  <br>
+  <em>Figure 6. YOLO11n Model F1 Score Diagram.</em>
+</p>
 
 ## Control Software
 
@@ -77,13 +106,13 @@ The PyQt5 application provides:
 <p align="center">
   <img src="images/gui_main.png" width="600">
   <br>
-  <em>Figure 5. Main GUI.</em>
+  <em>Figure 7. Main GUI.</em>
 </p>
 
 <p align="center">
   <img src="images/gui_sys.png" width="600">
   <br>
-  <em>Figure 6. System GUI.</em>
+  <em>Figure 8. System GUI.</em>
 </p>
 
 ## Technologies
