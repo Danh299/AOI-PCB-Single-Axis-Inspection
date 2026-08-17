@@ -1,5 +1,4 @@
-# AOI-PCB-Single-Axis-Inspection
-Project Description
+# Project Description
 
 This project presents the design and development of a single-axis Automated Optical Inspection (AOI) system for PCBA inspection. A Mitsubishi FX3U PLC controls a stepper-driven linear positioning stage to move the PCB through multiple camera positions. Images captured at each position are stitched into a higher-resolution PCB image and processed using a trained YOLO11 object detection model to identify electronic components and detect missing-component defects.
 
