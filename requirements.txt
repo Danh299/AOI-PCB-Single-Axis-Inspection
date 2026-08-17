@@ -1,0 +1,7 @@
+PyQt5
+opencv-python
+ultralytics
+pymodbus
+pyserial
+pandas
+openpyxl
